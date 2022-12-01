@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <title>Lucas Acuña</title>
+</head>
+<style>
+  @media (min-width: 992px) {
+    .navbar li {
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+  }
+</style>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg" style="background-color: #5F805A;">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link t2" href="#">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link t2" href="#">Tecnologías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link t2" href="#">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link t2" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br><br>
+
+  <div class="container">
+    <a class="text-center mx-auto t2" href="index.html">volver al inicio</a>
+    <br>
+  </div>
+
+  <div class="card mx-auto" style="width: 50rem; --bs-card-border-width: 1px;">
+    <div class="card-body">
+      <h4 class="text-center t2">Sitio web Club Nacional de Football</h4>
+      <p class="card-text t2 text-black">El proyecto necesitaba 2 apartados, un sistema de administración backend al
+        cual solo podian acceder usuarios administradores, y desdea ahi se pudiese ingresar, editar y borrar los datos
+        de los deportistas y de las noticias. Y también un sistema de vista front-end en el cual el usuario podria ver
+        los deportistas ingresados y sus datos relevantes. Asi como tambien el apartado de noticias, pero para ver este
+        se necesitaba estar logueado.</p>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <h4 class="text-center">Vistas del usuario</h4>
+      <br><br><br>
+
+
+      <div class="col-6">
+        <img src="nacional/6.PNG" class="ay" style="width: 100%;">
+      </div>
+
+      <div class="col-6">
+        <img src="nacional/7.PNG" class="ay" style="width: 100%;">
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-6">
+        <img src="nacional/8.PNG" class="ay" style="width: 100%;">
+      </div>
+      <div class="col-6">
+        <img src="nacional/9.PNG" class="ay" style="width: 100%;">
+      </div>
+    </div>
+  </div>
+  </div>
+  <br><br>
+  <div class="container">
+    <div class="row">
+      <h4 class="text-center">Vistas del administrador</h4>
+      <br><br><br>
+      <div class="col-6">
+        <img src="nacional/12.PNG" class="ay" style="width: 100%;">
+      </div>
+
+      <div class="col-6">
+        <img src="nacional/13.PNG" class="ay" style="width: 100%;">
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <h4 class="text-center">Sistemas de register, login/logout</h4>
+      <br><br><br>
+      <div class="col-4">
+        <img src="nacional/4.PNG" class="ay" style="width: 100%;">
+      </div>
+      <div class="col-4">
+        <img src="nacional/5.PNG" class="ay" style="width: 100%;">
+      </div>
+
+      <div class="col-4">
+        <img src="nacional/11.PNG" class="ay" style="width: 100%;">
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="card mx-auto" style="width: 50rem; --bs-card-border-width: 0px;">
+    <div class="card-body">
+      <p class="card-text t2 text-black">Fue mi primer proyecto poniendo a prueba los conocimientos que fueron adquiridos a lo largo del curso.</p>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    const myModal = document.getElementById('myModal')
+    const myInput = document.getElementById('myInput')
+
+    myModal.addEventListener('shown.bs.modal', () => {
+      myInput.focus()
+    })
+  </script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>  document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.materialboxed');
+      var instances = M.Materialbox.init(elems, options);
+    });</script>
+</body>
+
+</html>
