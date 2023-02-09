@@ -44,7 +44,7 @@
         <div class="header-links">
           <a class="link" href="#about" data-scroll>About Me</a>
           <a class="link" href="#tech" data-scroll>Tech</a>
-          <a class="link" href="#projects" data-scroll>Projects</a>
+          <a class="link" href="#projects" data-scroll>Contact</a>
           <a class="link" href="#contact" data-scroll>Contact</a>
         </div>
       </div>
@@ -246,10 +246,17 @@
       <div class="user-details">
         <h1>Contact</h1>
       </div>
-      <form>      
-        <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-        <input name="email" type="text" class="feedback-input" placeholder="Email" />
-        <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+      <form id="form">      
+        <input class="field" type="text" placeholder="Name" id="name" name="name"
+          required>
+      <input class="field" type="text" placeholder="Last Name" name="lastname"
+          id="lastname" required>
+
+      <input class="field" type="email" placeholder="Email" id="email" name="email"
+          required>
+    </div>
+    <textarea class="field" placeholder="Message" rows="3" name="message" id="message"
+              required></textarea>
             <input type="submit" class="submitBtn" id="emailButton" value="Sumbit">
             <small class="smallText">this message will be sent to luquitaa100@gmail.com</small>
       </form>
@@ -264,5 +271,8 @@
     <script src="./assets/js/sweet-scroll.min.js"></script>
     <script src="./assets/js/google-analytics.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('C8o4lj38yxxaXeBJ8')
+    </script>
   </body>
 </html>
