@@ -14,7 +14,9 @@ body {
     font-size: 100%;
     line-height: 1.5;
     color: #555;
-    font-family: 'Nunito Sans', sans-serif
+    font-family: 'Nunito Sans', sans-serif;
+    width: 100% !important;
+    
 }
 
 article,
@@ -22,7 +24,6 @@ aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 main,
 menu,
@@ -47,6 +48,8 @@ hr {
     height: 0;
     overflow: visible
 }
+
+
 
 code,
 kbd,
@@ -292,6 +295,95 @@ template {
     font-style: normal
 }
 
+.certification-section {
+    margin-top: 50px;
+  }
+  
+  .certification-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    justify-content: center;
+  }
+  
+  .certification-row::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .certification-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin-right: 10%;
+    text-align: center;
+    margin-bottom: 20px;
+    
+  }
+  
+  .certification-item:last-child {
+    margin-right: 0;
+  }
+  
+  .certification-item img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #333;
+    border-radius: 10px;
+    width: 300px;
+    height: 180px;
+  }
+  
+  .certification-info {
+    margin-top: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .certification-info h3 {
+    margin-top: 0;
+  }
+  
+  .certification-info p {
+    margin: 5px 0;
+  }
+  
+  .certification-item a {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #1488CC;
+    color: white;
+    text-decoration: none;
+    width: 140px; /* set a specific width for the button */
+    text-align: center; /* center the text horizontally */
+    line-height: 20px; /* center the text vertically */
+    box-sizing: border-box;
+  }
+  
+  
+  .certification-item a:hover {
+    background-color: #1488CC;
+  }
+  
+  .certification-item a:active {
+    background-color: ##1488CC;
+  }
+  
+  
+  
+  
+  
+  
 .fa {
     display: inline-block;
     font: 14px/1 FontAwesome;
@@ -5223,7 +5315,10 @@ a img {
     margin-top: 100px;
     text-align: center;
     color: #fff;
-    width:100%
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .footer .love {
