@@ -301,87 +301,59 @@ template {
   
   .certification-row {
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    justify-content: center;
-  }
-  
-  .certification-row::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .certification-item {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 10%;
+    flex-wrap: wrap;
+    justify-content: space-between; /* or center if needed */
+    gap: 20px;
+}
+
+.certification-item {
+    flex: 1 1 calc(33.33% - 20px); /* Each item takes 1/3 of the row minus gap */
+    max-width: calc(33.33% - 20px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
     text-align: center;
     margin-bottom: 20px;
-    
-  }
-  
-  .certification-item:last-child {
-    margin-right: 0;
-  }
-  
-  .certification-item img {
-    max-width: 100%;
+}
+
+.certification-image img {
+    width: 100%;
     height: auto;
-    border: 3px solid #333;
-    border-radius: 10px;
-    width: 400px;
-    height: 240px;
-  }
-  
-  .certification-info {
-    margin-top: auto;
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px;
-    display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  }
-  
-  .certification-info h3 {
-    margin-top: 0;
-  }
-  
-  .certification-info p {
-    margin: 5px 0;
-  }
-  
-  .certification-item a {
-    display: block;
+}
+
+.certification-info h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.certification-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.certification-info a {
+    display: inline-block;
     margin-top: 10px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #1488CC;
-    color: white;
+    padding: 10px 15px;
+    background: #007bff;
+    color: #fff;
     text-decoration: none;
-    width: 140px; /* set a specific width for the button */
-    text-align: center; /* center the text horizontally */
-    line-height: 20px; /* center the text vertically */
-    box-sizing: border-box;
-  }
-  
-  
-  .certification-item a:hover {
-    background-color: #1488CC;
-  }
-  
-  .certification-item a:active {
-    background-color: ##1488CC;
-  }
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.certification-info a:hover {
+    background: #0056b3;
+}
+
   
   
   
   
-  
+a {
+    text-decoration: none;
+}
   
 .fa {
     display: inline-block;
@@ -5305,19 +5277,13 @@ a img {
 
 .footer {
     background: #1488CC;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2B32B2, #1488CC);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 10px 0;
-    margin-top: 100px;
     text-align: center;
     color: #fff;
     box-sizing: border-box;
-    position: relative;
     width: 100%;
-    margin: 0 auto;
 }
 
 .footer .love {
@@ -5329,3 +5295,8 @@ a img {
     margin: 0;
     color: #fff
 }
+
+.project {
+    width: 1280px;    
+    height: 853px;   
+  }
